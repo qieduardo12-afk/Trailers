@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.995);
+}
+
+/* HEADER */
+.conteudoheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    background-color: rgb(9, 9, 9);
+    border-radius: 200px;
+}
+.conteudoheader img{
+    height: 13vh;
+    width: auto;
+}
+.titulo{
+    color: rgb(231, 230, 199);
+}
+.carousel{
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    background-color: rgba(128, 128, 128, 0.107);
+    padding: 2.5em;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 15s infinite linear;
+    padding-right: 1em;
+}
+.card{
+    flex: 0 0 5em;
+    height: 8em;
+    padding: 1em;
+    background: cornflowerblue;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card1 { background-image: url("../media/img/vingadores.jpeg"); }
+.card2 { background-image: url("../media/img/vingadores.jpeg"); }
+.card3 { background-image: url("../media/img/vingadores.jpeg"); }
+.card4 { background-image: url("../media/img/vingadores.jpeg"); }
+.card5 { background-image: url("../media/img/vingadores.jpeg"); }
+
+.links nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+    align-items: center;
+    color: rgb(231, 230, 199);
+}
+#destaque, #categorias{
+    color: rgb(231, 230, 199);
+}
+
+/* MAIN */
+
+.filmesdestaque{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10vh;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.titulo1{
+    color: rgb(231, 230, 199);
+    text-align: center;
+    font-size: 5vh;
+    margin-bottom: -1.5em;
+}
+.filme {
+    text-align: center;
+    color: rgb(231, 230, 199);
+}
+
+.filme img {
+    width: 30vh;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.filme img:hover {
+    transform: scale(1.05);
+}
+
+.grid-principal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(2, 2fr));
+    gap: 30px;
+    padding: 25px;
+}
+.box-filmes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo-box {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cartazes {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.cartaz {
+    width: 240px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform .2s;
+}
+
+.cartaz:hover {
+    transform: scale(1.05);
+}
